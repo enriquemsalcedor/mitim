@@ -1,0 +1,61 @@
+.ql-toolbar.ql-snow{
+	padding: 0px 8px;
+}
+.ql-snow .ql-tooltip {
+	background-color: #dddddd;
+	z-index: 2;
+}
+.ql-snow .ql-tooltip a.ql-preview {
+	display: block; 
+	margin-bottom: 8px;
+	max-width: 400px;
+}
+.ql-snow .ql-tooltip a.ql-action {
+	display: inline-block;
+	float: left;
+	background: #293f76;
+	color: #ffffff;
+	border-radius: 4px;
+}
+.ql-snow .ql-tooltip a.ql-action::after {
+	border-right: 0px;
+	content: 'Editar';
+	margin-left: 16px;
+	padding-right: 16px;
+}
+.ql-snow .ql-tooltip a.ql-remove {
+	display: inline-block;
+	float: left;
+	background: #F44336;
+	color: #ffffff;
+	border-radius: 4px;
+	margin-left: 10px;
+	padding-right: 8px;
+}
+.ql-snow .ql-tooltip a.ql-remove::before {
+	content: 'Remover';
+	margin-left: 8px;
+}
+.ql-snow .ql-tooltip::before {
+	content: "Visitar URL:";
+	font-weight: 600;
+}
+.ql-snow .ql-tooltip[data-mode=link]::before {
+    content: "Introduzca el link:";
+    display: block;
+	font-weight: 600;
+}
+.ql-snow .ql-tooltip.ql-editing input[type=text] {
+    display: block;
+	margin-bottom: 8px;
+	max-width: 400px;
+    width: 300px;
+}
+.ql-tooltip.ql-editing .ql-action{
+	background: #2f9e6d !important;
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    border-right: 0px;
+    content: 'Guardar';
+    padding-right: 16px;
+}

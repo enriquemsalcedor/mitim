@@ -1,0 +1,114 @@
+.header-dark {
+    background-color: #293F76;
+}
+.tab-titles {
+    background-color: #0a70b9;
+}
+.tab-titles a {
+    background-color: #0a70b9;
+}
+.dataTables_scrollHead th, table th {
+    background: #293F76;
+}
+.mdl-button--colored {
+    background-color: #293F76;
+    color: #ffffff;
+}
+.modal-dialog .card .card-header {
+    background: #293F76;
+}
+.menu-tab-sec>li.active>a, .menu-tab-sec>li.active>a:focus, .menu-tab-sec>li.active>a:hover {
+    background: #293F76;
+}
+.menu-tab-sec {
+    background: #0a70b9;
+}
+.menu-tab-sec > li> a, .menu-tab-sec > li> a:focus, .menu-tab-sec > li> a:hover {
+    background: #0a70b9;
+}
+.menu-tab-sec li {
+    border-right: 1px #038ab1 solid;
+}
+.facebook-bg {
+    background-color: #293F76;
+    color: #FFFFFF;
+    border: solid 1px #293F76;
+}
+.button-green {
+    background-color: #2F9E6D;
+    border: solid 2px #2F9E6D;
+}
+.icon-col.blue {
+    background: #0a70b9;
+}
+.icon-col.red {
+    background: #D8402F;
+    cursor: pointer;
+}
+.header-dark .header-logo {
+    background-image: url(../images/encabezado-maxia.png)!important;
+	background-size: auto;
+    background-position: left;
+}
+.footer {
+    background-color: #293F76;
+}
+.footer-dark .footer-logo {
+    background-image: url(../images/footer-logo.png)!important;
+    background-size: contain;
+    background-position: center;
+    margin: 6px 0px 0px 0;
+}
+.footer p {
+    line-height: 20px;
+}
+.cover-infinite-background {
+    background: #293F76 !important;
+}
+.page-login .login-image {
+    width: auto;
+    border-radius: 4px;
+    position: absolute;
+    margin-top: -50px;
+    right: 20px;
+    border: solid 1px rgba(0,0,0,0.1);
+	background: #ffffff;
+}
+input:-internal-autofill-selected {
+    background-color: rgb(255, 255, 255) !important;
+}
+#nombremenu {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 25%;
+    width: 50%;
+}
+.dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody>table>tbody>tr.odd>td {
+    padding: 12px !important;
+}
+.close:focus, .close:hover {
+    color: #fff;
+    opacity: initial;
+}
+.elfinder-stat-size {
+    margin-right: 0px;
+}
+.elfinder-cwd-icon:before {
+   content: '' !important;
+}
+.card-content{
+	width: 100%;
+	display: inline-block;
+}
+.menu-light.menu-large .menu-logo {
+    background-image: url(../images/encabezado-maxia-c.png);
+    background-size: auto;
+    background-position: left;
+    left: 8%;
+}
+.header-logo-app .header-title {
+    position: absolute;
+    right: 60px;
+    font-weight: 400;
+    top: 0;
+}

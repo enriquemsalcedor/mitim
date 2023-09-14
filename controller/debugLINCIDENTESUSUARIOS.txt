@@ -1,0 +1,952 @@
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,11,3,9,274) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idproyectos IN (1) AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('preventivos') AND b.idproyectos IN (1) AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idproyectos IN (1) AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW()) AND MONTH(fechacreacion) = MONTH(NOW()) AND DAY(fechacreacion) = DAY(NOW())  AND b.tipo IN ('incidentes') AND b.idproyectos IN (1) AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW()) AND WEEKOFYEAR(fechacreacion) = WEEKOFYEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idproyectos IN (1) AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW()) AND WEEKOFYEAR(fechacreacion) = WEEKOFYEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idproyectos IN (1) AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW()) AND WEEKOFYEAR(fechacreacion) = WEEKOFYEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (2,3,1) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,6,2,11,3,9,1) AND b.idproyectos IN (2,3,1) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes')
+SELECT 
+			IFNULL(SUM(case when b.idestados = 16 then 1 else 0 end),0) as resueltos, 
+			IFNULL(SUM(case when b.idestados != 16 then 1 else 0 end),0) as pendientes 
+			FROM incidentes b 
+			LEFT JOIN usuarios j ON b.solicitante = j.correo 
+			LEFT JOIN usuarios l ON b.asignadoa = l.correo
+			WHERE 1 AND  YEAR(fechacreacion) = YEAR(NOW())  AND b.tipo IN ('incidentes') AND b.idempresas IN (1) AND b.idclientes IN (10,8,307,6,7,2,11,3,9) AND b.idproyectos IN (3) 

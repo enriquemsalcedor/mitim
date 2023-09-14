@@ -1,0 +1,124 @@
+/* Al agregar incidentes */
+
+DELIMITER //
+
+CREATE TRIGGER insert_inc_tracking
+AFTER INSERT
+   ON incidentes FOR EACH ROW
+
+BEGIN
+
+   INSERT INTO tracking
+   ( tipodocumento,
+     iddocumento,
+     fechahora,
+	 estado,
+	 responsable,
+	 usuario)
+   VALUES
+   ( 
+	 'Incidente',
+     NEW.numero,
+	 NOW(),
+     NEW.estatus,
+	 NEW.responsable,
+	 NEW.usuarioactual );
+
+END; //
+
+DELIMITER ;
+
+
+/* Al editar incidentes */
+
+DELIMITER //
+
+CREATE TRIGGER update_inc_tracking
+AFTER UPDATE
+   ON incidentes FOR EACH ROW
+
+BEGIN
+
+   INSERT INTO tracking
+   ( tipodocumento,
+     iddocumento,
+     fechahora,
+	 estado,
+	 responsable,
+	 usuario)
+   VALUES
+   ( 
+	 'Incidente',
+     NEW.numero,
+	 NOW(),
+     NEW.estatus,
+	 NEW.responsable,
+	 NEW.usuarioactual );
+
+END; //
+
+DELIMITER ;
+
+
+/* Al insertar ordenes */
+
+
+DELIMITER //
+
+CREATE TRIGGER insert_ord_tracking
+AFTER INSERT
+   ON ordenes FOR EACH ROW
+
+BEGIN
+
+   INSERT INTO tracking
+   ( tipodocumento,
+     iddocumento,
+     fechahora,
+	 estado,
+	 responsable,
+	 usuario)
+   VALUES
+   ( 
+	 'Orden',
+     NEW.numero,
+	 NOW(),
+     NEW.estatus,
+	 NEW.proveedor,
+	 NEW.usuario );
+
+END; //
+
+DELIMITER ;
+
+
+/* Al editar ordenes */
+
+
+DELIMITER //
+
+CREATE TRIGGER update_ord_tracking
+AFTER UPDATE
+   ON ordenes FOR EACH ROW
+
+BEGIN
+
+   INSERT INTO tracking
+   ( tipodocumento,
+     iddocumento,
+     fechahora,
+	 estado,
+	 responsable,
+	 usuario)
+   VALUES
+   ( 
+	 'Orden',
+     NEW.numero,
+	 NOW(),
+     NEW.estatus,
+	 NEW.proveedor,
+	 NEW.usuario );
+
+END; //
+
+DELIMITER ;

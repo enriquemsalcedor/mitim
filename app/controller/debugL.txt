@@ -1,0 +1,24 @@
+  INSERT INTO incidentes (id,titulo, descripcion,idestados, idcategorias,idambientes,idsubambientes,tipo, idsubcategorias, 
+					origen, creadopor, solicitante, fechacreacion, horacreacion, idempresas, idclientes, idproyectos, iddepartamentos,
+					contacto)
+					VALUES (null,'Título de prueba', 'Descripción de prueba', '12','0','0','0','incidentes', 
+					'0','APP', '', '', '2022-08-22','16:26:21','1', 
+					'0', '0', '0','Contacto de prueba') 
+  INSERT INTO incidentes (id,titulo, descripcion,idestados, idcategorias,idambientes,idsubambientes,tipo, idsubcategorias, 
+					origen, creadopor, solicitante, fechacreacion, horacreacion, idempresas, idclientes, idproyectos, iddepartamentos,
+					contacto)
+					VALUES (null,'Correctivo de prueba desde app', 'Correctivo de prueba desde app', '12','0','0','0','incidentes', 
+					'0','APP', '', '', '2022-08-22','16:27:44','1', 
+					'0', '0', '0','Mary Pérez') 
+  INSERT INTO incidentes (id,titulo, descripcion,idestados, idcategorias,idambientes,idsubambientes,tipo, idsubcategorias, 
+					origen, creadopor, solicitante, fechacreacion, horacreacion, idempresas, idclientes, idproyectos, iddepartamentos,
+					contacto)
+					VALUES (null,'Correctivo desde APP 2', 'Correctivo desde APP 2', '12','0','0','0','incidentes', 
+					'0','APP', '', '', '2022-08-22','16:29:37','1', 
+					'0', '0', '0','Ana Gonzalez') 
+  INSERT INTO incidentes (id,titulo, descripcion,idestados, idcategorias,idambientes,idsubambientes,tipo, idsubcategorias, 
+					origen, creadopor, solicitante, fechacreacion, horacreacion, idempresas, idclientes, idproyectos, iddepartamentos,
+					contacto)
+					VALUES (null,'Correctivo desde app xy', 'Correctivo desde app xy', '12','0','0','0','incidentes', 
+					'0','APP', '', '', '2022-08-22','18:52:34','1', 
+					'0', '0', '0','María perez') 

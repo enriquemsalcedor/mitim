@@ -1,0 +1,8 @@
+SELECT concat(l.nombre, ' ', p.nombre) as name, count(i.id) as y 
+			FROM incidentes2 i 
+			INNER JOIN proyectos p ON p.id = i.idproyectos
+			INNER JOIN clientes l ON l.id = i.idclientes
+			INNER JOIN usuarios u ON i.asignadoa = u.correo
+			INNER JOIN usuarios j ON i.solicitante = j.correo
+			WHERE i.fechacreacion <= '20191202' 
+			GROUP BY name 

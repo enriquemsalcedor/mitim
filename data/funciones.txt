@@ -1,0 +1,19 @@
+DELIMITER $$
+
+CREATE DEFINER=`root`@`localhost` FUNCTION `tipoSistema` (`xsistema` VARCHAR(120)) RETURNS VARCHAR(100) CHARSET utf8 COLLATE utf8_spanish2_ci NO SQL
+    DETERMINISTIC
+case xsistema
+when 24 then return   "LIMPIEZA, ASEO";
+when 25	then return   "INFRAESTRUCTURA";
+when 26 then return   "INFRAESTRUCTURA";
+when 27 then return "LAVANDERIA";
+when 29 then return "AGUA POTABLE";
+when 30 then return  "AIRES ACONDICIONADOS";
+when 31 then return "SANEAMIENTO";
+when 32 then return  "SUPLENCIA";
+when 33 then return "VAPOR Y GAS";
+ELSE
+   return "";
+end case$$
+
+DELIMITER ;

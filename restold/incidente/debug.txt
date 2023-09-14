@@ -1,0 +1,2 @@
+UPDATEINC: UPDATE incidentes SET  descripcion = 'se recibió llamada de la licenciada Yohana quien comunica que el mouse para realizar las reconstrucciones de imagenes no funciona.
+CAT toshiba de Urgencias del CHDRAAM' , idempresas = '1' , idclientes = '1' , idproyectos = '1' , iddepartamentos = '4' , idambientes = '47' , idestados = '13' , idcategorias = '10' , idprioridades = '3' , asignadoa = 'martin.rodriguez@maxialatam.com'  WHERE id = 24205 

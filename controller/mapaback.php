@@ -1,0 +1,525 @@
+<?php
+	include("../conexion.php");
+
+	if (isset($_REQUEST['opcion'])) {
+		$opcion = $_REQUEST['opcion'];
+		
+		if ($opcion=='MAPA')
+			mapa();
+		elseif ($opcion=='TIEMPOS')
+			tiempos();
+		elseif ($opcion=='TENDENCIA')
+			tendencia();
+		elseif ($opcion=='UNIDADES')
+			unidades();
+		elseif ($opcion=='DETALLES')
+			detalles();
+		elseif ($opcion=='DETALLES2')
+			detalles2();
+		elseif ($opcion=='DATOS')
+			datos();
+		elseif ($opcion=='DATOSUNIDAD')
+			datosunidad();
+		elseif ($opcion=='COMBOESTATUS')
+			comboEstatus();
+		elseif ($opcion=='PRODEQUIPOS')
+			prodequipos();
+		else
+			return true;
+	}
+
+function mapa() {
+	global $mysqli;
+	
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date('Y'));
+	$mes = (!empty($_REQUEST['mes']) ? $_REQUEST['mes'] : '');
+	$modalidad =  (!empty($_REQUEST['modalidad']) ? $_REQUEST['modalidad'] : "*");
+	$tipo =  (!empty($_REQUEST['tipo']) ? $_REQUEST['tipo'] : "");
+	$provincia =  (!empty($_REQUEST['provincia']) ? $_REQUEST['provincia'] : "*");
+	
+	$consulta = "
+		select count(distinct codequipo) as total 
+		from datos d
+		where 1 = 1
+		";
+	if ($modalidad!="*") 
+		$consulta .= "and d.modalidad like '%$modalidad%' ";
+	if ($agno!="")
+		$consulta .= "and d.ano like '%$agno%' ";
+	if ($mes!="")	
+		$consulta .= "and d.mes like '%$mes%' ";
+	if ($tipo!="")
+		$consulta .= "and d.unidad like '%$tipo%' ";
+	if ($provincia!="*")	
+		$consulta .= "and d.provincia = '$provincia' ";
+	
+	$result = $mysqli->query($consulta);
+	if ($rec = $result->fetch_assoc()){
+		$total = $rec['total']; 
+	}
+	
+	$consulta = "
+		select u.unidad as title, u.lat, u.lon, 9 as zoom, 
+		case when u.unidad like '%Hospital%' then 'images/markerh.png' 
+		else case when u.unidad like '%Poli%' then 'images/markerp.png' 
+		else 'images/markeru.png' end end as icon,
+		count(distinct codequipo) as circle_options,
+		count(distinct codequipo) as html
+		from unidades u
+		inner join datos d on u.codigo = d.codigo 
+		where 1 = 1 ";
+	
+	if ($modalidad!="*")
+		$consulta .= "and d.modalidad like '%$modalidad%' ";
+	if ($agno!="")
+		$consulta .= "and d.ano like '%$agno%' ";
+	if ($mes!="")	
+		$consulta .= "and d.mes like '%$mes%' ";
+	if ($tipo!="")
+		$consulta .= "and d.unidad like '%$tipo%' ";
+	if ($provincia!="*")	
+		$consulta .= "and d.provincia = '$provincia' ";
+	
+	$consulta .= "group by title, lat, lon, zoom, icon";
+	
+	$result = $mysqli->query($consulta);
+	
+	$objJson = array();
+	$objJson2 = array();
+	while($rec = $result->fetch_assoc()){
+		$objJson2["strokeColor"] = "#000000";
+		if ($rec['icon']=='images/markerh.png')
+			$objJson2["fillColor"] = "#3B5998";
+		elseif ($rec['icon']=='images/markerp.png')
+			$objJson2["fillColor"] = "#0976B4";
+		else
+			$objJson2["fillColor"] = "#1769FF";
+		$objJson2["radius"] =  $rec['circle_options'] * 100 / $total * 5000 ;
+		$rec['circle_options'] = $objJson2;
+		$rec['html'] = $rec['html'] . ' Equipos';
+		$objJson[] = $rec; 
+	}
+	
+	echo json_encode($objJson);
+}
+
+
+function tendencia() {
+	global $mysqli;
+			
+	$agno = (int) date('Y');
+	$mes = (int) date('m');  	
+				
+	$consulta = "
+		select
+			ano + (mes/100) as orden, 
+			concat(mes, '/', ano) as periodo, 
+			sum(realizados) / 1000 as realizados, 
+			sum(informados) / 1000 as informados,
+			sum(cancelados) / 1000 as cancelados,
+			sum(agendados) / 1000 as agendados
+		from datos 
+		where ano + (mes/100) < 2017.1000
+		group by periodo	
+		order by orden desc limit 0,12";
+	
+	$result = $mysqli->query($consulta);
+	
+	$nbrows = $result->num_rows;	
+	if($nbrows>0){
+		$objJson = array();
+		while($rec = $result->fetch_assoc()){
+			$objJson[] = $rec; 
+		}
+		
+		echo json_encode($objJson);
+	} else {
+		echo '';
+	}
+}
+
+function tiempos() {
+	global $mysqli;
+			
+	$agno = (int) date('Y');
+	$mes = (int) date('m');  	
+				
+	$consulta = "
+		select
+			ano + (mes/100) as orden, 
+			concat(mes, '/', ano) as periodo,
+            avg(case when modalidad='Angiografía' then dias else NULL end) as Angiografia,
+			avg(case when modalidad='Fluoroscopia' then dias else NULL end) as Fluoroscopia,
+			avg(case when modalidad='Mamografía' then dias else NULL end) as Mamografia,
+			avg(case when modalidad='Otros Estudios' then dias else NULL end) as Dental,
+			avg(case when modalidad='Radiología Convencional' then dias else NULL end) as RadiologiaConvencional,
+			avg(case when modalidad='Resonancia Magnetica' then dias else NULL end) as ResonanciaMagnetica,
+			avg(case when modalidad='Tomografía Computada' then dias else NULL end) as TomografiaComputada,
+			avg(case when modalidad='Ultrasonido' then dias else NULL end) as Ultrasonido
+		from datos 
+		where ano + (mes/100) < 2017.1000
+		group by orden, periodo	
+		order by orden desc 
+		limit 0,48";
+	
+	$result = $mysqli->query($consulta);
+	
+	$nbrows = $result->num_rows;	
+	if($nbrows>0){
+		$objJson = array();
+		while($rec = $result->fetch_assoc()){
+			$objJson[] = $rec; 
+		}
+		
+		echo json_encode($objJson);
+	} else {
+		echo '';
+	}
+}
+
+function unidades(){
+	global $mysqli;
+	
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : '');
+	$mes = (!empty($_REQUEST['mes']) ? $_REQUEST['mes'] : '');
+	
+	$page = $_GET['page']; // get the requested page
+	$limit = $_GET['rows']; // get how many rows we want to have into the grid
+	$sidx = $_GET['sidx']; // get index row - i.e. user click to sort
+	$sord = $_GET['sord']; // get the direction
+	
+	if(!$sidx) $sidx =1;
+	$where = "";
+	if ($_GET['_search'] == 'true' && !isset($_GET['filters'])) {
+		$searchField = $_GET['searchField'];
+		$searchOper = $_GET['searchOper'];
+		$searchString = $_GET['searchString'];
+		$where = getWhereClause($searchField,$searchOper,$searchString);
+	} elseif ($_GET['_search'] == 'true') {
+		$filters = $_GET['filters'];
+		$where = getWhereClauseFilters($filters);
+	}
+	
+	$consulta = "SELECT codigo, unidad, 
+					sum(agendados) as agendados,
+					sum(cancelados) as cancelados,
+					sum(realizados) as realizados,
+					sum(informados) as informados
+				FROM datos
+				WHERE 1=1 $where ";
+	
+	if ($agno!="")
+		$consulta .= "and ano in ($agno) ";
+	else
+		$consulta .= "and ano = ".date("Y")." ";
+		
+	if ($mes!="")
+		$consulta .= "and mes in ($mes) ";
+	
+	$consulta .= "GROUP BY codigo, unidad ";
+	 
+	$result = $mysqli->query($consulta); 
+	$count = $result->num_rows;
+	
+	if( $count >0 ) {
+		$total_pages = ceil($count/$limit);
+	} else {
+		$total_pages = 1;
+	}
+	if ($page > $total_pages) $page=$total_pages;
+	$start = $limit*$page - $limit; // do not put $limit*($page - 1)
+	
+	$consulta .= " LIMIT ".$start.", ".$limit;
+	$result = $mysqli->query($consulta);
+	
+	$response = new StdClass;
+	
+	$response->page = $page;
+	$response->total = $total_pages;
+	$response->records = $count;
+	$i=0;
+	while($row = $result->fetch_assoc()){
+		$response->rows[$i]['id']=$row['codigo'];
+		$response->rows[$i]['cell']=array($row['codigo'],$row['unidad'],$row['realizados'],$row['informados']);
+		$i++;
+	}        
+	echo json_encode($response);
+}
+
+function detalles(){
+	global $mysqli;
+	
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date("Y"));
+	$mes = (!empty($_REQUEST['mes']) ? $_REQUEST['mes'] : '');
+	$id = (!empty($_REQUEST['id']) ? $_REQUEST['id'] : '');
+	
+	$page = $_GET['page']; // get the requested page
+	$limit = $_GET['rows']; // get how many rows we want to have into the grid
+	$sidx = $_GET['sidx']; // get index row - i.e. user click to sort
+	$sord = $_GET['sord']; // get the direction
+	
+	if(!$sidx) $sidx =1;
+	$where = "";
+	if ($_GET['_search'] == 'true' && !isset($_GET['filters'])) {
+		$searchField = $_GET['searchField'];
+		$searchOper = $_GET['searchOper'];
+		$searchString = $_GET['searchString'];
+		$where = getWhereClause($searchField,$searchOper,$searchString);
+	} elseif ($_GET['_search'] == 'true') {
+		$filters = $_GET['filters'];
+		$where = getWhereClauseFilters($filters);
+	}
+	
+	$consulta = "SELECT modalidad, equipo, 
+					sum(agendados) as agendados,
+					sum(cancelados) as cancelados,
+					sum(realizados) as realizados,
+					sum(informados) as informados
+				FROM datos
+				WHERE codigo='$id' $where ";
+	
+	if ($agno!="")
+		$consulta .= "and ano in ($agno) ";
+	else
+		$consulta .= "and ano = ".date("Y");
+		
+	if ($mes!="")
+		$consulta .= "and mes in ($mes) ";
+	
+	$consulta .= "GROUP BY modalidad, equipo ";
+	 
+	$result = $mysqli->query($consulta); 
+	$count = $result->num_rows;
+	
+	if( $count >0 ) {
+		$total_pages = ceil($count/$limit);
+	} else {
+		$total_pages = 1;
+	}
+	if ($page > $total_pages) $page=$total_pages;
+	$start = $limit*$page - $limit; // do not put $limit*($page - 1)
+	
+	$consulta .= " LIMIT ".$start.", ".$limit;
+	$result = $mysqli->query($consulta);
+	
+	$response = new StdClass;
+	
+	$response->page = $page;
+	$response->total = $total_pages;
+	$response->records = $count;
+	$i=0;
+	while($row = $result->fetch_assoc()){
+		$response->rows[$i]['id']=$i;
+		$response->rows[$i]['cell']=array('',$row['modalidad'],$row['equipo'],$row['realizados'],$row['informados']);
+		$i++;
+	}        
+	echo json_encode($response);
+}
+
+function detalles2(){
+	global $mysqli;
+	
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date("Y"));
+	$mes = (!empty($_REQUEST['mes']) ? $_REQUEST['mes'] : '');
+	$id = (!empty($_REQUEST['id']) ? $_REQUEST['id'] : '');
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date("Y"));
+	$page = $_GET['page']; // get the requested page
+	$limit = $_GET['rows']; // get how many rows we want to have into the grid
+	$sidx = $_GET['sidx']; // get index row - i.e. user click to sort
+	$sord = $_GET['sord']; // get the direction
+	
+	if(!$sidx) $sidx =1;
+	$where = "";
+	if ($_GET['_search'] == 'true' && !isset($_GET['filters'])) {
+		$searchField = $_GET['searchField'];
+		$searchOper = $_GET['searchOper'];
+		$searchString = $_GET['searchString'];
+		$where = getWhereClause($searchField,$searchOper,$searchString);
+	} elseif ($_GET['_search'] == 'true') {
+		$filters = $_GET['filters'];
+		$where = getWhereClauseFilters($filters);
+	}
+	
+	$consulta = "SELECT modalidad, 
+					count(distinct equipo) as cantidad, 
+					sum(agendados) as agendados,
+					sum(realizados) as realizados,
+					sum(informados) as informados
+				FROM datos
+				WHERE codigo='$id' $where ";
+	
+	if ($agno!="")
+		$consulta .= "and ano in ($agno) ";
+	else
+		$consulta .= "and ano = ".date("Y")." ";
+		
+	if ($mes!="")
+		$consulta .= "and mes in ($mes) ";
+	
+	$consulta .= "GROUP BY modalidad ";
+	 
+	$result = $mysqli->query($consulta); 
+	$count = $result->num_rows;
+	
+	if( $count >0 ) {
+		$total_pages = ceil($count/$limit);
+	} else {
+		$total_pages = 1;
+	}
+	if ($page > $total_pages) $page=$total_pages;
+	$start = $limit*$page - $limit; // do not put $limit*($page - 1)
+	
+	$consulta .= " LIMIT ".$start.", ".$limit;
+	$result = $mysqli->query($consulta);
+	
+	$response = new StdClass;
+	
+	$response->page = $page;
+	$response->total = $total_pages;
+	$response->records = $count;
+	$i=0;
+	while($row = $result->fetch_assoc()){
+		$response->rows[$i]['id']=$i;
+		$response->rows[$i]['cell']=array($row['modalidad'],$row['cantidad'],$row['agendados'],$row['realizados'],$row['informados']);
+		$i++;
+	}        
+	echo json_encode($response);
+}
+
+
+function datos() {
+	global $mysqli;
+	
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date("Y"));
+	$mes = (!empty($_REQUEST['mes']) ? $_REQUEST['mes'] : '');
+	
+	$consulta = "
+			SELECT ano, modalidad, count(distinct codequipo) as total 
+			FROM datos
+			WHERE ano<=$agno ";								
+	
+	if ($mes!="")
+		$consulta .= "and mes in ($mes) ";
+	
+	$consulta .= "GROUP BY ano, modalidad ";
+	$consulta .= "ORDER BY ano desc ";
+		 
+	$result = $mysqli->query($consulta);
+	
+	$response = new StdClass;
+	$rows = array();
+	$i=0;
+	while($row = $result->fetch_assoc()){
+		$response->rows[$i]['ano']=$row['ano'];
+		$response->rows[$i]['modalidad']=$row['modalidad'];
+		$response->rows[$i]['valor']=$row['total'];
+		$i++;
+	}        
+	echo json_encode($response);
+}
+
+function datosunidad() {
+	global $mysqli;
+	
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date("Y"));
+	$mes = (!empty($_REQUEST['mes']) ? $_REQUEST['mes'] : '');
+	$unidad = $_REQUEST['unidad'];
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date("Y"));
+	
+	$consulta = "
+			SELECT *
+			from personal
+			where unidad = '$unidad' and ano = $agno
+			order by ano desc, mes desc
+			limit 0,1;
+			 ";								
+	
+	$result = $mysqli->query($consulta);
+	$consulta2 = "
+			SELECT 
+			count(distinct tipodia) as dias,
+			count(distinct tipohora) as turno,
+			sum(realizados) as realizados,
+			sum(informados) as informados
+			from datos
+			where unidad = '$unidad' ";								
+	
+	if ($agno!="")
+		$consulta2 .= "and ano in ($agno) ";
+	else
+		$consulta2 .= "and ano = ".date("Y");
+	
+	$consulta2 .= " limit 0,1;";
+	$result2 = $mysqli->query($consulta2);
+	
+	$response = new StdClass;
+	$rows = array();
+	$i=0;
+	if($row = $result->fetch_assoc()){
+		$response->rows[$i]['codigo']=$row['codigo'];
+		$response->rows[$i]['unidad']=$row['unidad'];
+		$response->rows[$i]['tecnicos']=$row['tecnicos'];
+		$response->rows[$i]['radiologos']=$row['radiologos'];
+		$response->rows[$i]['teleradiologos']=$row['teleradiologos'];
+	}
+	if($row = $result2->fetch_assoc()){
+		$response->rows[$i]['dias']=$row['dias'];
+		$response->rows[$i]['turno']=$row['turno'];
+		$response->rows[$i]['realizados']=$row['realizados'];
+		$response->rows[$i]['informados']=$row['informados'];
+	} 
+	echo json_encode($response);
+}
+
+function comboEstatus(){
+	global $mysqli;
+
+	$query  = "SELECT id, nombre FROM maestro WHERE tipo = 'Estados' ";
+	$result = $mysqli->query($query);
+
+	$combo = "<select required='' name='estados' id='cmbestados' class='form-control'>";
+	$combo .= "<option value=''> - </option>";
+	while($row = $result->fetch_assoc()){
+		$combo .= "<option value='".$row['id']."'>".$row['nombre']."</option>";
+	}
+	$combo .= "</select>";
+	echo $combo;
+}
+
+function prodequipos() {
+	global $mysqli;
+	
+	$agno = (!empty($_REQUEST['agno']) ? $_REQUEST['agno'] : date('Y'));
+	$mes = (!empty($_REQUEST['mes']) ? $_REQUEST['mes'] : '');
+	$modalidad =  (!empty($_REQUEST['modalidad']) ? $_REQUEST['modalidad'] : "");
+	$tipo =  (!empty($_REQUEST['tipo']) ? $_REQUEST['tipo'] : "");
+	
+	$consulta = "
+		select concat(unidad,': ',equipo) as modalidad, sum(realizados) as estudios
+			from datos
+		where 1 = 1
+		";
+	if ($modalidad!="*") 
+		$consulta .= "and modalidad like '%$modalidad%' ";
+	if ($agno!="")
+		$consulta .= "and ano in ($agno) ";
+	if ($mes!="")	
+		$consulta .= "and mes in ($mes) ";
+	if ($tipo!="")
+		$consulta .= "and unidad like '%$tipo%' ";
+	
+	$consulta .= "
+			group by unidad, equipo";
+	
+	$result = $mysqli->query($consulta);
+	
+	$response = new StdClass;
+	$rows = array();
+	$i=0;
+	while ($row = $result->fetch_assoc()){
+		$rows[] = $row;
+	}
+	
+	echo json_encode($rows);
+}
+?>

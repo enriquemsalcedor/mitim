@@ -1,0 +1,4 @@
+ SELECT a.id, a.nombre 
+				FROM estados a
+				INNER JOIN proyectos b ON FIND_IN_SET(b.id,a.idproyectos)
+				 WHERE a.id <> 17 AND tipo <> 'laboratorio'  GROUP BY a.id ORDER BY a.nombre ASC 

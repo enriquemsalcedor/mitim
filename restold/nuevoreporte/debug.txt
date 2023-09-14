@@ -1,0 +1,4 @@
+UPDATEINC:  INSERT INTO incidentes (id,titulo, descripcion,idestados, idcategorias,idambientes,idsubambientes,tipo, idsubcategorias, origen, creadopor, solicitante, 
+					fechacreacion, horacreacion, idempresas, idclientes, idproyectos, iddepartamentos)
+					VALUES (null,'puerta automática en sop no cierra ', 'puerta automática en sop no está cerrando este equipo es de ACDEM prioridad 1 ', '12','0','0','0','incidentes', '0','APP', 'sjaramillo@hospitalsantafepanama.com', 'sjaramillo@hospitalsantafepanama.com', 
+					'2021-11-27','10:49:51','1', '0', '0', '0') -sjaramillo

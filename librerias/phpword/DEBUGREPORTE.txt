@@ -1,0 +1,64 @@
+Query es: SELECT a.id, a.titulo, b.nombre AS proyecto, a.tipo, c.nombre AS estado, d.nombre AS categoria, 
+				a.horastrabajadas, ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, 
+				ifnull(a.fecharesolucion, '') AS fecharesolucion, a.horaresolucion, f.nombre AS cliente, 
+				a.idclientes, a.idproyectos, a.idestados, a.idprioridades, a.resolucion,
+				g.nombre AS equipo, g.serie, h.nombre AS marca, i.nombre AS ubicacion, j.nombre AS asignado
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id 
+				LEFT JOIN estados c ON a.idestados = c.id
+				LEFT JOIN categorias d ON a.idcategorias = d.id  
+				LEFT JOIN empresas e ON a.idempresas = e.id 
+				LEFT JOIN clientes f ON a.idclientes = f.id 
+				LEFT JOIN activos g ON a.idactivos = g.id 
+				LEFT JOIN marcas h ON g.idmarcas = h.id 
+				LEFT JOIN ambientes i ON g.idambientes = i.id 
+				LEFT JOIN usuarios j ON a.asignadoa = j.correo
+				WHERE a.idestados = 16  AND a.idclientes = 38  AND a.idproyectos IN (68)  AND a.tipo IN ('preventivos')  AND ((a.fechacreacion >= '2021-08-01'  AND a.fechacreacion <= '2021-09-30')  OR (a.fecharesolucion >= '2021-11-01'  AND a.fecharesolucion <= '2021-11-11')) 
+Query es: SELECT a.id, a.titulo, b.nombre AS proyecto, a.tipo, c.nombre AS estado, d.nombre AS categoria, 
+				a.horastrabajadas, ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, 
+				ifnull(a.fecharesolucion, '') AS fecharesolucion, a.horaresolucion, f.nombre AS cliente, 
+				a.idclientes, a.idproyectos, a.idestados, a.idprioridades, a.resolucion,
+				g.nombre AS equipo, g.serie, h.nombre AS marca, i.nombre AS ubicacion, j.nombre AS asignado
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id 
+				LEFT JOIN estados c ON a.idestados = c.id
+				LEFT JOIN categorias d ON a.idcategorias = d.id  
+				LEFT JOIN empresas e ON a.idempresas = e.id 
+				LEFT JOIN clientes f ON a.idclientes = f.id 
+				LEFT JOIN activos g ON a.idactivos = g.id 
+				LEFT JOIN marcas h ON g.idmarcas = h.id 
+				LEFT JOIN ambientes i ON g.idambientes = i.id 
+				LEFT JOIN usuarios j ON a.asignadoa = j.correo
+				WHERE a.idestados = 16  AND a.idclientes = 38  AND a.idproyectos IN (68)  AND a.tipo IN ('preventivos')  AND ((a.fechacreacion >= '2021-10-01'  AND a.fechacreacion <= '2021-10-31')  OR (a.fecharesolucion >= '2021-10-01'  AND a.fecharesolucion <= '2021-11-30')) 
+Query es: SELECT a.id, a.titulo, b.nombre AS proyecto, a.tipo, c.nombre AS estado, d.nombre AS categoria, 
+				a.horastrabajadas, ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, 
+				ifnull(a.fecharesolucion, '') AS fecharesolucion, a.horaresolucion, f.nombre AS cliente, 
+				a.idclientes, a.idproyectos, a.idestados, a.idprioridades, a.resolucion,
+				g.nombre AS equipo, g.serie, h.nombre AS marca, i.nombre AS ubicacion, j.nombre AS asignado
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id 
+				LEFT JOIN estados c ON a.idestados = c.id
+				LEFT JOIN categorias d ON a.idcategorias = d.id  
+				LEFT JOIN empresas e ON a.idempresas = e.id 
+				LEFT JOIN clientes f ON a.idclientes = f.id 
+				LEFT JOIN activos g ON a.idactivos = g.id 
+				LEFT JOIN marcas h ON g.idmarcas = h.id 
+				LEFT JOIN ambientes i ON g.idambientes = i.id 
+				LEFT JOIN usuarios j ON a.asignadoa = j.correo
+				WHERE a.idestados = 16  AND a.idclientes = 38  AND a.idproyectos IN (68)  AND a.tipo IN ('preventivos')  AND ((a.fechacreacion >= '2021-10-01'  AND a.fechacreacion <= '2021-10-31')  OR (a.fecharesolucion >= '2021-10-01'  AND a.fecharesolucion <= '2021-10-31')) 
+Query es: SELECT a.id, a.titulo, b.nombre AS proyecto, a.tipo, c.nombre AS estado, d.nombre AS categoria, 
+				a.horastrabajadas, ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, 
+				ifnull(a.fecharesolucion, '') AS fecharesolucion, a.horaresolucion, f.nombre AS cliente, 
+				a.idclientes, a.idproyectos, a.idestados, a.idprioridades, a.resolucion,
+				g.nombre AS equipo, g.serie, h.nombre AS marca, i.nombre AS ubicacion, j.nombre AS asignado
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id 
+				LEFT JOIN estados c ON a.idestados = c.id
+				LEFT JOIN categorias d ON a.idcategorias = d.id  
+				LEFT JOIN empresas e ON a.idempresas = e.id 
+				LEFT JOIN clientes f ON a.idclientes = f.id 
+				LEFT JOIN activos g ON a.idactivos = g.id 
+				LEFT JOIN marcas h ON g.idmarcas = h.id 
+				LEFT JOIN ambientes i ON g.idambientes = i.id 
+				LEFT JOIN usuarios j ON a.asignadoa = j.correo
+				WHERE a.idestados = 16  AND a.idclientes = 38  AND a.idproyectos IN (68)  AND a.tipo IN ('preventivos')  AND ((a.fechacreacion >= '2021-10-01'  AND a.fechacreacion <= '2021-10-31')  OR (a.fecharesolucion >= '2021-10-01'  AND a.fecharesolucion <= '2021-10-31')) 

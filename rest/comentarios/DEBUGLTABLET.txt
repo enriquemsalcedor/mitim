@@ -1,0 +1,125 @@
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:240
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240-USUARIO:
+USUARIO:-IDUSUARIO:240
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240-USUARIO:
+USUARIO:-IDUSUARIO:240
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:526
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=526-USUARIO:
+USUARIO:-IDUSUARIO:778
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=778-USUARIO:
+USUARIO:-IDUSUARIO:778
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=778-USUARIO:
+USUARIO:-IDUSUARIO:778
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=778-USUARIO:
+USUARIO:-IDUSUARIO:240
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240-USUARIO:
+USUARIO:-IDUSUARIO:240
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240-USUARIO:
+USUARIO:-IDUSUARIO:240
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240-USUARIO:
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:239
+USUARIO:-IDUSUARIO:239
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:240
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778
+USUARIO:-IDUSUARIO:778

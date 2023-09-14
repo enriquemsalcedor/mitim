@@ -1,0 +1,20 @@
+/* Calendario */
+.dropdown-menu{
+	z-index: 10000;
+}
+
+/* Filtro  */
+.filtroFecha{
+	width:100% !important;
+	height: inherit;
+}
+
+/* VALIDADOR */
+.form-valide-error{
+	border: 1px solid red !important;
+}
+.form-valide-error-bottom{
+	border-bottom: 1px solid red !important;
+	background-image: none !important;
+}
+

@@ -1,0 +1,192 @@
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,100
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10
+ACTIVOS ES: SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo, ur.nombre AS responsable,
+					a.idambientes, a.modalidad, sa.nombre AS subambiente, a.estado, a.fase, a.fechatopemant,
+					a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, 
+					e.nombre AS idproyectos, ti.nombre AS tipo
+					FROM activos a 
+					LEFT JOIN ambientes b ON a.idambientes = b.id 
+					LEFT JOIN subambientes sa ON a.idsubambientes = sa.id 
+					LEFT JOIN empresas c ON a.idempresas = c.id 
+					INNER JOIN clientes d ON a.idclientes = d.id 
+					INNER JOIN proyectos e ON a.idproyectos = e.id 
+					LEFT JOIN usuarios u ON u.idproyectos = e.id
+					LEFT JOIN usuarios ur ON a.idresponsables = ur.id
+					LEFT JOIN marcas ma ON a.idmarcas = ma.id
+					LEFT JOIN modelos mo ON a.idmodelos = mo.id
+					LEFT JOIN activostipos ti ON a.idtipo = ti.id
+					WHERE 1 = 1  AND a.idempresas IN (1) AND a.idclientes IN (10,8,6,2,11,3,9,1) AND a.idproyectos IN (2,3,1)    GROUP BY a.id  ORDER BY a.id DESC  LIMIT 0,10

@@ -1,0 +1,4 @@
+UPDATEINC:  INSERT INTO incidentes (id,titulo, descripcion,idestados, idcategorias,idambientes,idsubambientes,tipo, idsubcategorias, origen, creadopor, solicitante, 
+					fechacreacion, horacreacion, idempresas, idclientes, idproyectos, iddepartamentos,contacto)
+					VALUES (null,'equipos defectuosos', 'mantenimiento de diversos equipos q edtan dando problemas', '12','0','0','0','incidentes', '0','APP', 'felixmg15@hotmail.com', 'felixmg15@hotmail.com', 
+					'2021-07-23','09:39:35','1', '38', '68', '0','') 

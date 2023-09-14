@@ -1,0 +1,115 @@
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 529699  seeie 41001b42002 ubicada en el segundo piso complejo
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 529699  seeie 41001b42002 ubicada en el segundo piso complejo
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 741676 serie 728321-5209 ubicado en segundo piso complejo
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 104365.            81010167462
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 587173.    2B201-370EN
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 779718 Serie 3M5249D45007
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= Activo 529699. serie CM74B5941039
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 10221
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 10221
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 10573 serie 721408
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 587247 serie 0162585810
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= Activo 520712. serie 7161/2545
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= Activo 587247. serie0162585810
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 520712. serie 7161/2595
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 741676/ 52009
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 587244.  serie 0162585807
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 501376/9749
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 501376/9749
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= codigo 713501 serie 3M5249D1200C
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 520712. serie 7161/2595
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 587244 serie 0162585807
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 587244 serie 0162585807
+SELECT a.id As idActivo,a.serie, LEFT(a.nombre,45) AS activo,a.idambientes As IdAmbiente, b.nombre AS ambiente,b.idclientes AS idCliente, d.nombre AS cliente
+                FROM activos a 
+				INNER JOIN ambientes b ON a.idambientes = b.id 
+				INNER JOIN clientes d ON b.idclientes= d.id 
+				WHERE a.id= 587173. serie HC80773626

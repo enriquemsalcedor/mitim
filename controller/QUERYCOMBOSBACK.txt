@@ -1,0 +1,20 @@
+QUERY-luris: SELECT 0 AS id, ' - RESPONSABLES - ' AS nombre
+					UNION 
+					SELECT CONCAT(a.correo, '') AS id, a.nombre FROM usuarios a
+					INNER JOIN niveles b ON a.nivel = b.id   AND a.idclientes IN (21,37)  GROUP BY a.id
+QUERY-diana: SELECT 0 AS id, ' - RESPONSABLES - ' AS nombre
+					UNION 
+					SELECT CONCAT(a.correo, '') AS id, a.nombre FROM usuarios a
+					INNER JOIN niveles b ON a.nivel = b.id   AND find_in_set(37,a.idclientes)  GROUP BY a.id
+QUERY-diana: SELECT 0 AS id, ' - RESPONSABLES - ' AS nombre
+					UNION 
+					SELECT CONCAT(a.correo, '') AS id, a.nombre FROM usuarios a
+					INNER JOIN niveles b ON a.nivel = b.id   AND find_in_set(37,a.idclientes)  GROUP BY a.id
+QUERY-diana: SELECT 0 AS id, ' - RESPONSABLES - ' AS nombre
+					UNION 
+					SELECT CONCAT(a.correo, '') AS id, a.nombre FROM usuarios a
+					INNER JOIN niveles b ON a.nivel = b.id   AND find_in_set(37,a.idclientes)  GROUP BY a.id
+QUERY-luris: SELECT 0 AS id, ' - RESPONSABLES - ' AS nombre
+					UNION 
+					SELECT CONCAT(a.correo, '') AS id, a.nombre FROM usuarios a
+					INNER JOIN niveles b ON a.nivel = b.id   AND (  find_in_set(21,a.idclientes)  OR  find_in_set(37,a.idclientes)  )  GROUP BY a.id

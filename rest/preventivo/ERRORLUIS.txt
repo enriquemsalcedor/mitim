@@ -1,0 +1,7 @@
+usuario:-queryerror:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=249
+usuario:-queryerror:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=407
+usuario:-queryerror:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=407
+usuario:-queryerror:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240
+usuario:-queryerror:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240
+usuario:-queryerror:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=686
+usuario:-queryerror:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=686

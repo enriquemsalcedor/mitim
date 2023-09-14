@@ -1,0 +1,1 @@
+QUERY:SELECT nivel,usuario, correo, idempresas, idclientes, idproyectos, idambientes, iddepartamentos FROM usuarios WHERE id=240-USUARIO:

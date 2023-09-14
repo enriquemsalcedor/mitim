@@ -1,0 +1,388 @@
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (54)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (76)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (94)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (39)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (1)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (68)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (34)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 
+ SELECT a.id, a.nombre 
+					FROM estados a 
+					INNER JOIN estadospuente b ON b.idestados = a.id  					
+					WHERE 1 = 1 AND FIND_IN_SET('Correctivo',b.tipo)  AND b.idproyectos in (0)  ORDER BY a.nombre ASC 

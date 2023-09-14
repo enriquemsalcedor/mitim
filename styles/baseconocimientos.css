@@ -1,0 +1,19 @@
+  
+.dataTables_filter {
+	display: block !important; z-index: 1 !important;
+}
+div.dataTables_wrapper div.dataTables_filter {
+	width: 85%; margin-bottom: 20px; /*background: #fff;*/
+}
+div.dataTables_wrapper div.dataTables_filter label i {
+	margin-top: 6px !important; color: #1e3d7a;
+}
+div.dataTables_wrapper div.dataTables_filter input {
+	width: 98%;
+}
+#tablaincidentes_wrapper .mdl-grid:first-child{
+	background: #ddd; height: 60px; padding: 15px 10px; margin-bottom: 15px;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+	width: 98%;
+}

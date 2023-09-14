@@ -1,0 +1,453 @@
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario, cu.periodo
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN cuatrimestres cu ON a.fecharesolucion BETWEEN cu.fechainicio AND cu.fechafin
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND e.nombre like '%agendado%'  ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND e.nombre like '%agendado%'  ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND e.nombre like '%agendado%'  ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND e.nombre like '%agendado%'  ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND a.fechacreacion >= "2023-09-01"  AND a.fechacreacion <= "2023-09-08"  ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario, cu.periodo, co.comentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN cuatrimestres cu ON a.fecharesolucion BETWEEN cu.fechainicio AND cu.fechafin
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				LEFT JOIN comentarios co ON a.id = co.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND a.id = 3111  AND j.nombre like '%STARBUCKS%'  ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND a.fechacreacion >= "2023-09-01"  AND a.fechacreacion <= "2023-09-12"  AND a.idestados IN (12) AND e.nombre like '%agend%'  ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND a.fechacreacion >= "2023-09-01"  AND a.fechacreacion <= "2023-09-13"  AND a.idestados IN (12) ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND a.fechacreacion >= "2023-09-01"  AND a.fechacreacion <= "2023-09-14"  AND a.idestados IN (11) ORDER BY a.id DESC 
+EXPORTAR REGISTROS: SELECT a.id, a.titulo, a.descripcion, b.nombre AS proyecto, e.nombre AS estado, m.nombre AS equipo, m.serie, m.activo, 
+				mar.nombre as marca, r.nombre as modelo, m.modalidad, m.estado as estadoequipo, f.nombre AS categoria, 
+				g.nombre AS subcategoria, c.nombre AS sitio, h.prioridad, a.origen, a.creadopor, a.solicitante, a.asignadoa, 
+				o.nombre AS departamento, a.resolucion, a.satisfaccion, a.comentariosatisfaccion, a.estadoant,
+				ifnull(a.fechacreacion, '') AS fechacreacion, a.horacreacion, ifnull(a.fecharesolucion, '') as fecharesolucion, 
+				a.horaresolucion, a.horastrabajadas, p.nombre as cliente, a.fechadesdefueraservicio, a.fechafinfueraservicio, 
+				a.fueraservicio, (CASE WHEN a.fechafinfueraservicio is null then (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, CURRENT_DATE)) ELSE (TIMESTAMPDIFF(DAY, a.fechadesdefueraservicio, a.fechafinfueraservicio)) END) as diasfueraservicio,  
+				nu.nombre AS resueltopor, a.atencion, a.idestados,
+				CONCAT(ie.fechadesde, ' ', ie.horadesde) AS estadoasignado,
+				CONCAT(iep.fechadesde, ' ', iep.horadesde) AS estadoenproceso, et.nombre AS etiqueta,
+				ci.fecha AS primercomentario
+				FROM incidentes a
+				LEFT JOIN proyectos b ON a.idproyectos = b.id
+				LEFT JOIN ambientes c ON a.idambientes = c.id
+				LEFT JOIN estados e ON a.idestados = e.id
+				LEFT JOIN categorias f ON a.idcategorias = f.id
+				LEFT JOIN subcategorias g ON a.idsubcategorias = g.id
+				LEFT JOIN sla h ON a.idprioridades = h.id
+				LEFT JOIN usuarios j ON a.solicitante = j.correo 
+				LEFT JOIN usuarios l ON a.asignadoa = l.correo
+				LEFT JOIN activos m ON a.idactivos = m.id AND a.idambientes = m.idambientes
+				LEFT JOIN empresas n ON a.idempresas = n.id
+				LEFT JOIN departamentos o ON a.iddepartamentos = o.id
+				LEFT JOIN clientes p ON a.idclientes = p.id
+				LEFT JOIN marcas mar ON m.idmarcas = mar.id
+				LEFT JOIN modelos r ON m.idmodelos = r.id
+				LEFT JOIN etiquetas et ON et.id = a.idetiquetas
+				LEFT JOIN
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados where estadonuevo = 33 ORDER BY id DESC LIMIT 1) iep ON a.id = iep.idincidentes
+				LEFT JOIN 
+					(
+						SELECT idincidentes, fechadesde, horadesde FROM incidentesestados ie WHERE estadonuevo = 13 ORDER BY id DESC LIMIT 1
+					) ie ON a.id = ie.idincidentes
+				LEFT JOIN (
+						SELECT nombre, correo FROM usuarios
+					) nu ON a.resueltopor = nu.correo
+				LEFT JOIN (
+						SELECT fecha, idmodulo FROM comentarios ORDER BY id ASC LIMIT 1
+					) ci ON a.id = ci.idmodulo
+				 WHERE a.tipo = 'incidentes'   AND a.fechacreacion >= "2023-09-01"  AND a.fechacreacion <= "2023-09-14"  AND a.idestados IN (15) ORDER BY a.id DESC 

@@ -1,0 +1,1 @@
+ SELECT a.id, a.nombre FROM clientes a  WHERE a.id != 0  ORDER BY a.nombre ASC 

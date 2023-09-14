@@ -1,0 +1,45 @@
+.sidebar.blue .logo.blue, .off-canvas-sidebar .logo.blue{
+    background: #008ec5;
+    color: #ffffff !important;
+}
+.sidebar .logo.blue .simple-text, .off-canvas-sidebar .logo.blue .simple-text {
+    color: #ffffff;
+}
+.sidebar.blue .sidebar-wrapper, .off-canvas-sidebar .sidebar-wrapper {
+     background: #008ec5;
+}
+.sidebar.blue .nav i, .off-canvas-sidebar .nav i {
+    color: #ffffff;
+}
+.sidebar.blue .nav p{
+	 color: #ffffff;
+}
+.sidebar.blue .nav li > a, .off-canvas-sidebar .nav li > a {
+   color: #ffffff;
+}
+.sidebar.blue .nav li:hover > a, .sidebar.blue .nav li.active > [data-toggle="collapse"], .off-canvas-sidebar .nav li:hover > a, .off-canvas-sidebar .nav li.active > [data-toggle="collapse"] {
+    color: #ffffff;
+}
+.nav>li>a {
+    padding: 5px 10px;
+}
+img{
+	width:100%;
+}
+img.imgr{
+	max-width:175px;
+}
+@media (min-width: 992px){
+	.sidebar-mini .sidebar.blue .logo-mini {
+	    background: #008ec5;
+	}
+	.sidebar .logo.blue .simple-text, .off-canvas-sidebar .logo.blue .simple-text {
+	    color: #fff;
+	}
+	.sidebar .user, .off-canvas-sidebar .user {
+	    margin: 0;
+	}
+	.sidebar-mini .sidebar .nav [data-toggle="collapse"] ~ div > ul > li > a {
+	    color: #008ec5;
+	}
+}

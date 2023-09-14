@@ -1,0 +1,1 @@
+comboxdepartamentosgrupos:  SELECT id, correo, nombre, estado,iddepartamentos FROM usuarios WHERE nombre != ''  AND FIND_IN_SET('4',iddepartamentos)  ORDER BY nombre ASC 

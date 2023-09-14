@@ -1,0 +1,46 @@
+    /* para la ayuda */
+    #especial {
+        margin-right: 35px;
+        margin-left: 35px;
+    }
+    .contenedor{
+      margin-top: 1em;
+      text-align: center;
+    } 
+    
+    /* All Icons*/
+    .contenedor .fa{
+      font-size: 4em;
+      padding: 1em;
+      color: #fff;
+    }
+    .contenedor .fa-pencil{
+      text-shadow: 3px 6px #272634;
+    }
+    .contenedor .fa-facebook-official{
+      text-shadow: 3px 3px 16px #272634;
+    }
+    .contenedor .fa-github{
+      text-shadow: -7px 8px 2px #c54040, -3px 5px #c74b16;
+    }
+    .contenedor .fa-codepen{
+      text-shadow: -3px -8px 9px #f78aa0;
+    }
+    .fa-times-thin:before {
+      content: '\00d7';
+    }
+
+     #myModalpdf .modal-header {
+            background: #0a5897;
+            color: #ffffff;
+        }
+     #myModalpdf .modal-footer{ 
+            border-top: 1px solid black;
+            background: #0a5897;
+            text-align:center;
+        }    
+    
+     .titulo{
+        font-weight:bold;
+        color:#0a5897;
+     }

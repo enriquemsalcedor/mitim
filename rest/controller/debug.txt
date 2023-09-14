@@ -1,0 +1,4 @@
+SELECT b.nombre AS marca, c.nombre AS modelo,a.modalidad AS modalidad, a.estado AS estado, a.nombre AS nombre FROM activos a 
+				LEFT JOIN marcas b ON b.id = a.idmarcas
+				LEFT JOIN marcas c ON c.id = a.idmodelos
+                WHERE 1 = 1 AND a.id = 2179

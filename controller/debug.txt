@@ -1,0 +1,8 @@
+CATE: SELECT a.id, a.nombre
+						FROM estados a
+						INNER JOIN incidentes b ON b.idestados = a.id
+						INNER JOIN categorias c ON b.idcategorias = c.id
+						INNER JOIN usuarios j ON b.solicitante = j.correo
+						INNER JOIN usuarios l ON b.asignadoa = l.correo
+						WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4						
+						 GROUP BY a.id ORDER BY a.nombre ASC 

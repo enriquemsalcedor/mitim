@@ -1,0 +1,21 @@
+#calendar{
+	padding: 10px 0;
+}
+.fc-state-hover, .fc-state-down, .fc-state-disabled {
+    color: #333333;
+    background-color: #cccccc;
+    border-color: #999999;
+}
+.fc-state-active {
+    background-color: #2196f3;
+    color: #ffffff;
+    border-color: #2196f3 !important;
+}
+.fc button {
+    border-color: #999999;
+	height: auto;
+}
+.fc th {
+    color: #ffffff;
+    font-size: 14px;
+}

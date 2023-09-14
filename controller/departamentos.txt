@@ -1,0 +1,412 @@
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo,
+				   LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				   LEFT(GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				   GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS clientestt, 
+				   GROUP_CONCAT( DISTINCT e.nombre SEPARATOR  ', ' ) AS proyectostt
+				   FROM departamentos a
+				   LEFT JOIN departamentospuente c ON c.iddepartamentos = a.id
+				   LEFT JOIN clientes d  ON FIND_IN_SET(d.id, c.idclientes)
+                   LEFT JOIN proyectos e  ON FIND_IN_SET(e.id, c.idproyectos)
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 
+ SELECT a.id, a.nombre, a.descripcion, a.tipo
+				   FROM departamentos a 

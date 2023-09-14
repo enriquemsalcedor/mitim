@@ -1,0 +1,165 @@
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 80
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= https://uqr.to/muqq
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 1000
+SELECT a.id, a.serie, LEFT(a.nombre,45) AS nombre, a.activo, ma.nombre AS marca, mo.nombre AS modelo,
+				a.idambientes, a.modalidad,a.estado, a.fase, a.fechatopemant,
+				a.fechainst, b.nombre AS ambiente, c.descripcion AS idempresas, d.nombre AS idclientes, e.nombre AS idproyectos
+				FROM activos a 
+				LEFT JOIN ambientes b ON a.idambientes = b.id 
+				LEFT JOIN empresas c ON a.idempresas = c.id 
+				LEFT JOIN clientes d ON a.idclientes = d.id 
+				LEFT JOIN proyectos e ON a.idproyectos = e.id 
+				LEFT JOIN marcas ma ON a.idmarcas = ma.id
+				LEFT JOIN modelos mo ON a.idmodelos = mo.id
+				WHERE a.id= 56

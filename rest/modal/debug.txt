@@ -1,0 +1,5 @@
+ SELECT a.contacto,a.id, a.titulo, a.descripcion, a.idestados, a.idambientes, a.idsubambientes, a.idclientes, a.idproyectos, 
+					a.iddepartamentos, a.fechacreacion, a.horacreacion, a.asignadoa, a.idcategorias, a.idsubcategorias, a.idprioridades, 
+					a.resolucion, a.fecharesolucion, a.horaresolucion, a.reporteservicio
+					FROM incidentes a
+					WHERE a.id IN (43393)

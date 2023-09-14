@@ -1,0 +1,78 @@
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT a.id, a.prioridad, a.descripcion,
+				    LEFT(GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				    LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				    GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ) AS clientestt, 
+				    GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS proyectostt
+		            FROM sla a
+		            LEFT JOIN slapuente b ON b.idprioridades = a.id
+				    LEFT JOIN clientes c  ON FIND_IN_SET(c.id, b.idclientes)
+                    LEFT JOIN proyectos d  ON FIND_IN_SET(d.id, b.idproyectos)
+					WHERE 1 
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT a.id, a.prioridad, a.descripcion,
+				    LEFT(GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				    LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				    GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ) AS clientestt, 
+				    GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS proyectostt
+		            FROM sla a
+		            LEFT JOIN slapuente b ON b.idprioridades = a.id
+				    LEFT JOIN clientes c  ON FIND_IN_SET(c.id, b.idclientes)
+                    LEFT JOIN proyectos d  ON FIND_IN_SET(d.id, b.idproyectos)
+					WHERE 1 
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT a.id, a.prioridad, a.descripcion,
+				    LEFT(GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				    LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				    GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ) AS clientestt, 
+				    GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS proyectostt
+		            FROM sla a
+		            LEFT JOIN slapuente b ON b.idprioridades = a.id
+				    LEFT JOIN clientes c  ON FIND_IN_SET(c.id, b.idclientes)
+                    LEFT JOIN proyectos d  ON FIND_IN_SET(d.id, b.idproyectos)
+					WHERE 1 
+ SELECT a.id, a.prioridad, a.descripcion,
+				    LEFT(GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				    LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				    GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ) AS clientestt, 
+				    GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS proyectostt
+		            FROM sla a
+		            LEFT JOIN slapuente b ON b.idprioridades = a.id
+				    LEFT JOIN clientes c  ON FIND_IN_SET(c.id, b.idclientes)
+                    LEFT JOIN proyectos d  ON FIND_IN_SET(d.id, b.idproyectos)
+					WHERE 1 
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT a.id, a.prioridad, a.descripcion,
+				    LEFT(GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				    LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				    GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ) AS clientestt, 
+				    GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS proyectostt
+		            FROM sla a
+		            LEFT JOIN slapuente b ON b.idprioridades = a.id
+				    LEFT JOIN clientes c  ON FIND_IN_SET(c.id, b.idclientes)
+                    LEFT JOIN proyectos d  ON FIND_IN_SET(d.id, b.idproyectos)
+					WHERE 1 
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT a.id, a.prioridad, a.descripcion,
+				    LEFT(GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				    LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				    GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ) AS clientestt, 
+				    GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS proyectostt
+		            FROM sla a
+		            LEFT JOIN slapuente b ON b.idprioridades = a.id
+				    LEFT JOIN clientes c  ON FIND_IN_SET(c.id, b.idclientes)
+                    LEFT JOIN proyectos d  ON FIND_IN_SET(d.id, b.idproyectos)
+					WHERE 1 
+ SELECT * FROM niveles WHERE id!=0 
+ SELECT a.id, a.prioridad, a.descripcion,
+				    LEFT(GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ),45) AS clientes, 
+				    LEFT(GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ),45) AS proyectos,
+				    GROUP_CONCAT( DISTINCT c.nombre SEPARATOR  ', ' ) AS clientestt, 
+				    GROUP_CONCAT( DISTINCT d.nombre SEPARATOR  ', ' ) AS proyectostt
+		            FROM sla a
+		            LEFT JOIN slapuente b ON b.idprioridades = a.id
+				    LEFT JOIN clientes c  ON FIND_IN_SET(c.id, b.idclientes)
+                    LEFT JOIN proyectos d  ON FIND_IN_SET(d.id, b.idproyectos)
+					WHERE 1 

@@ -1,0 +1,1 @@
+curl.exe http://localhost/soporte/controller/vidautilactivossym.php
