@@ -10931,3 +10931,323 @@ IDBIT ES:1
 GETVALOR ES: SELECT prioridad FROM sla WHERE id = 1 LIMIT 1 
 IDBIT ES:
 PASÓ 2 BIT
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 3 AND b.idestados = 9
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 3 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 12
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 8
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 15
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 7
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 12
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 4
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 9
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 8
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 15
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 13
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 10
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 12
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 11
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 15
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 13
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 3 AND b.idestados = 9
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 3 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 12
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 8
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 15
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 7
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 1 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 12
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 4
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 9
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 8
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 15
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 13
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 10
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 2 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 12
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 11
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 15
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 13
+								 GROUP BY a.id ORDER BY a.nombre ASC 
+CATEGORIAS2: SELECT COUNT(b.id) as cant
+								FROM estados a
+								INNER JOIN incidentes b ON b.idestados = a.id
+								INNER JOIN categorias c ON b.idcategorias = c.id
+								INNER JOIN usuarios j ON b.solicitante = j.correo
+								INNER JOIN usuarios l ON b.asignadoa = l.correo
+								WHERE 1 AND b.tipo IN ('incidentes') AND a.id != 0 AND b.idcategorias = 4 AND b.idestados = 16
+								 GROUP BY a.id ORDER BY a.nombre ASC 

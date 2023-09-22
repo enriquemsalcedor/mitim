@@ -1,7 +1,7 @@
 $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none");
 	var id = getQueryVariable('id');
-	//var telefono = getQueryVariable('telefono');
-	var telefono = '+5079179155';
+	var telefono = getQueryVariable('value');
+	//var telefono = '+5079179155';
 	var token = "";
 	if(id != "" && id != undefined && id != null){
 		gettoken();
@@ -41,6 +41,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 			type: "POST",
 			url: "http://34.130.54.49:3002/api/v1/user/login-uid-firebase",
 			dataType: "json",
+			headers: "",
 			data: {"uid_firebase" : "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"},		
 			beforeSend: function(){
 
@@ -87,7 +88,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 							}
 							contenido += '<div class="col-xl-6" >' +
 											'<div class="mb-2">' +
-											'<button type="button" class="btn btn-primary btn-xs mr-2" data-id="'+value.id_habilidad_temp+'"' +
+											'<button type="button" class="btn btn-primary btn-xs mr-2" style="width: 50px;" data-id="'+value.id_habilidad_temp+'"' +
 											'id="accion-habilidad" data-accion="'+value.accion+'">'+
 											'<i class="'+icon+' mr-2" title="'+value.accion+'"></i>'+ 
 												

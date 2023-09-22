@@ -191,12 +191,28 @@ const cargarCombosEditarDepEd = ()=>{
 	$.get( "controller/combosback.php?oper=prioridades", function(result){ 
 		$("#prioridad").empty();
 		$("#prioridad").append(result);
+
+		//Seleccionar estado Nuevo por defecto
+		if(idincidente == ''){
+			$("#prioridad").val(1).trigger('change');
+		} 
 	});	
 	
 	//DEPARTAMENTOS		 
 	$.get( "controller/combosback.php?oper=departamentosgrupos", function(result){ 
 		$("#iddepartamentos").empty();
 		$("#iddepartamentos").append(result);
+
+		//Seleccionar departamento Proveedores por defecto
+		if(idincidente == ''){
+			$("#iddepartamentos").val(3).trigger('change');
+		} 
+	});
+
+	// carga los proveedores por defecto
+	$.get( "controller/combosback.php?oper=usuariosDep", { idproyectos: idproyectos, iddepartamentos: 3 }, function(result){ 
+		$("#asignadoa").empty();
+		$("#asignadoa").append(result);
 	});
 	
 	//AMBIENTES

@@ -474,3 +474,5 @@
 								VALUES('Preventivos', 0, 'Del preventivo #0 se ha generado el correctivo #3338', 'Público', 'veronica@mitim.app', NOW(), 'NO')
 	INSERT INTO comentarios (modulo,idmodulo,comentario,visibilidad,usuario,fecha,visto) 
 								VALUES('Preventivos', 0, 'Del preventivo #0 se ha generado el correctivo #3339', 'Público', 'ana@mitim.app', NOW(), 'NO')
+	INSERT INTO comentarios (modulo,idmodulo,comentario,visibilidad,usuario,fecha,visto) 
+								VALUES('Preventivos', 0, 'Del preventivo #0 se ha generado el correctivo #2173', 'Público', 'maxia', NOW(), 'NO')

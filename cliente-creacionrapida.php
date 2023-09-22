@@ -47,7 +47,7 @@
 				</div>
 				<div class="form-row mt-2">
 					<div class="col-xs-6 col-sm-6">
-						<label class="control-label" for="correo" >Correo </label>
+						<label class="control-label" for="correo" >Correo <span class="text-red">*</span></label>
 						<input type="text" class="form-control text" name="correo" id="correo" autocomplete="off">
 					</div>
 					<div class="col-xs-6 col-sm-6">
