@@ -1,6 +1,13 @@
 <?php
     include_once("conexion.php");
 	include_once("funciones.php");
+    
+    //CROSS-REEFRENCE PERMITIDOS
+    header("Access-Control-Allow-Origin: *");
+    header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+    header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
+    header("content-type: application/json: charset=utf-8");
+
 	
 	verificarLogin();
 	$nombre = $_SESSION['nombreUsuario'];
@@ -24,7 +31,6 @@
 	}else{
 		$tipo = $_GET['type'];
 
-
 		/* if($tipo=="edit" || $tipo=="view" ){//EDITAR O VER
 			if($nivel==7 &&  $tipo=="edit"){//NO Authorized
 				header("Location: marcas.php");
@@ -34,7 +40,6 @@
 			header("Location: marcas.php");
 			exit;
 		} */
-
 
 	}
 
