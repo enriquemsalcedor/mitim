@@ -116,8 +116,10 @@
 				$aplicacion = '<span class="pill">Clientes</span>';
 			}else if($row['aplicacion']==2){
 				$aplicacion = '<span class="pill">Proveedores</span>';
-			}else{
+			}else if($row['aplicacion']==3){
 				$aplicacion = '<span class="pill">Clientes</span><span class="pill">Proveedores</span>';
+			}else{
+				$aplicacion = '';
 			}
 
 			$resultado[] = array(
