@@ -37,6 +37,21 @@
 	</head>
 	<body>
 
+	<style>
+		.pill {
+			background-color: #ddd;
+			border: none;
+			color: black;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 16px;
+		}
+	</style>
+
 	    <!--*******************
 	        Preloader start
 	    ********************-->
@@ -123,8 +138,9 @@
                                     <tr>
                                         <th></th>  
                                         <th id="<?php echo $nivel; ?>" >Acción</th>
-										<th id="ctitulo">Titulo</th>
-                                        <th id="cestatus">Estatus</th>
+										<th id="ctitulo">Título</th>
+                                        <th id="caplicacion">Aplicación</th>
+										<th id="cestatus">Estatus</th>
                                     </tr>
                                 </thead> 
                                 <tbody></tbody>

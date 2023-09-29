@@ -52,17 +52,15 @@
 		$length   			 = (!empty($_REQUEST['length']) ? $_REQUEST['length'] : 10);
 		/*--------------------------------------------------------------------*/
 		$nivel = $_SESSION["nivel"]; 
-		$query = " SELECT a.id, a.titulo, a.estatus FROM publicidad a ";
+		$query = " SELECT a.id, a.titulo, a.estatus, a.aplicacion FROM publicidad a ";
 		$query  .= " WHERE a.id!=0 ";
     	  
-        $query  .= " $where ";
 		debugL($query,"publicidad");
 	    $query .= " GROUP BY a.id ";
 		if(!$result = $mysqli->query($query)){
 		  die($mysqli->error);  
 		}
 		$recordsTotal = $result->num_rows;
-		//$query  .= " ORDER BY a.nombre LIMIT $start, $length ";
 		$query  .= " ORDER BY a.titulo";
 		
 		$resultado = array();
@@ -113,11 +111,21 @@
 				$estatus = 'Sin Publicar';
 			}
 
+			$aplicacion = '';
+			if($row['aplicacion']==1){
+				$aplicacion = '<span class="pill">Clientes</span>';
+			}else if($row['aplicacion']==2){
+				$aplicacion = '<span class="pill">Proveedores</span>';
+			}else{
+				$aplicacion = '<span class="pill">Clientes</span><span class="pill">Proveedores</span>';
+			}
+
 			$resultado[] = array(
 				'id' 			=>	$row['id'],
 				'acciones' 		=>	$acciones, 
 				'titulo'		=>	$row['titulo'],
 				'estatus' 	    =>	$estatus,
+				'aplicacion' 	=>	$aplicacion,
 			);
 		}
 		$response = array(			
@@ -135,14 +143,16 @@
 		$titulo			= (!empty($_REQUEST['titulo']) ? $_REQUEST['titulo'] : '');
 		$descripcion	= (!empty($_REQUEST['descripcion']) ? $_REQUEST['descripcion'] : '');
 		$imagen 		= (!empty($_REQUEST['imagen']) ? $_REQUEST['imagen'] : '');
+		$aplicacion		= (!empty($_REQUEST['aplicacion']) ? $_REQUEST['aplicacion'] : '');
 
 		$urlimagen = null;
 	
 		
-		$query 	= '	INSERT INTO	publicidad (titulo, descripcion, urlimagen, fechacreacion, estatus)	VALUES ( "'.$titulo.'", "'.$descripcion.'", "'.$urlimagen.'", now(), 1 ) ';
+		$query 	= '	INSERT INTO	publicidad (titulo, descripcion, urlimagen, fechacreacion, estatus, aplicacion)	VALUES ( "'.$titulo.'", "'.$descripcion.'", "'.$urlimagen.'", now(), 1, "'.$aplicacion.'" ) ';
 		$result = $mysqli->query($query);
 		$id = $mysqli->insert_id;
 		
+		echo $aplicacion;
 		if($result == true){
 			$campos = array(
 				'Titulo' 		=> $titulo,
@@ -200,7 +210,9 @@
 				$resultado = array(  
 					'titulo'		=>	$row['titulo'],
 					'imagen'	 	=>	$row['urlimagen'],
-					'descripcion' 	=>	$row['descripcion']	
+					'descripcion' 	=>	$row['descripcion'],
+					'aplicacion' 	=>	$row['aplicacion'],
+					'estatus' 	    =>	$row['estatus'],
 				);
 			}
 			
@@ -223,11 +235,13 @@
 		$titulo			= (!empty($_REQUEST['titulo']) ? $_REQUEST['titulo'] : '');
 		$descripcion	= (!empty($_REQUEST['descripcion']) ? $_REQUEST['descripcion'] : '');
 		$imagen 		= (!empty($_REQUEST['imagen']) ? $_REQUEST['imagen'] : '');
+		$aplicacion		= (!empty($_REQUEST['aplicacion']) ? $_REQUEST['aplicacion'] : '');
+		$estatus		= (!empty($_REQUEST['estatus']) ? $_REQUEST['estatus'] : '');
 
 		$urlimagen = null;
 
 		$valoresold = getRegistroSQL("SELECT titulo AS Titulo, descripcion AS 'Descripción' FROM publicidad WHERE id = '".$id."' ");
-		$query 	= '	UPDATE publicidad SET titulo = "'.$titulo.'", descripcion = "'.$descripcion.'", urlimagen = "'.$urlimagen.'" WHERE id = "'.$id.'" ';
+		$query 	= '	UPDATE publicidad SET titulo = "'.$titulo.'", descripcion = "'.$descripcion.'", urlimagen = "'.$urlimagen.'", aplicacion = "'.$aplicacion.'", estatus = "'.$estatus.'" WHERE id = "'.$id.'" ';
 		$result = $mysqli->query($query);	
 		
 		if($result == true){
@@ -290,11 +304,6 @@
 	    $existe_modelo = 0;
 	    $qMod = "SELECT modelos.id FROM modelos 
                 WHERE modelos.idmarcas= '$id' LIMIT 1;"; 
-
-//	    $qMod = "SELECT modelos.id FROM modelos 
- //               	INNER JOIN marcas ON marcas.id = modelos.idmarcas
- //               WHERE modelos.id= '$id' LIMIT 1;"; 
-
 
 
         $rQAct = $mysqli->query($qact);
@@ -362,9 +371,41 @@
 		global $mysqli;
 		$ruta = 'https://toolkit.maxialatam.com/mitimqa/';
 		
-		$query  = " SELECT a.id, a.titulo, a.urlimagen, a.descripcion 
+		$query  = " SELECT a.id, a.titulo, a.urlimagen, a.descripcion, a.estatus
 					FROM publicidad a  
-					WHERE 1=1
+					WHERE 1=1 AND a.aplicacion in (1,2) AND a.estatus = 1
+					ORDER BY a.id ASC ";
+		 
+		$result = $mysqli->query($query);
+		$resultado = array();
+		$recordsTotal = $result->num_rows;
+
+		while($row = $result->fetch_assoc()){
+			
+			$resultado[] = array(			
+				'id' 			=> $row['id'],
+				'urlimagen'		=> $ruta.$row['urlimagen'],
+				'titulo' 		=> $row['titulo'],
+				'descripcion' 	=> $row['descripcion'],
+				
+			); 
+		}
+		$response = array(
+		  "records" => intval($recordsTotal),
+		  "data" => $resultado,
+		); 
+		echo json_encode($response);
+
+
+	}
+	
+	function getpublicidadproveedores() {
+		global $mysqli;
+		$ruta = 'https://toolkit.maxialatam.com/mitimqa/';
+		
+		$query  = " SELECT a.id, a.titulo, a.urlimagen, a.descripcion, a.estatus
+					FROM publicidad a  
+					WHERE 1=1 AND a.aplicacion in (1,3) AND a.estatus = 1
 					ORDER BY a.id ASC ";
 		 
 		$result = $mysqli->query($query);

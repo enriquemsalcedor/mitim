@@ -1,5 +1,7 @@
 $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none");
 	var id = getQueryVariable('id');
+	var aplicacion;
+	var estatus = 1;
 	if(id != "" && id != undefined && id != null){
 		getpubicidad();
 		$('.tipo').html('Editar publicidad');
@@ -39,6 +41,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 		var descripcion		= $("#descripcion").val();
 		var imagen 			= $("#imagenaux").val();
 
+
 		let accion = "creada";
 		if(idpublicidad==''){
 			oper = 'createpublicidad';
@@ -52,7 +55,8 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 		var formData = new FormData(frm);		
 		formData.append('oper',oper);
 
-		if(validar(idpublicidad,imagen,titulo) == 1){
+
+		if(validar(idpublicidad,imagen,titulo,aplicacion) == 1){
 			$.ajax({
 				type: 'post',
 				url: 'controller/publicidadesback.php',
@@ -132,6 +136,11 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 					$("#descripcion").val(item.descripcion);
 					$('#imagenpreview').attr('src', item.imagen);
 
+					if (id != 0){
+						$("#aplicacion").val(item.aplicacion).trigger('change');
+						$("#estatus").val(item.estatus).trigger('change');
+					}
+
 					if(tipo=="view"){
 						$("#idpublicidad").prop("disabled",true);
 						$("#titulo").prop("disabled",true);
@@ -154,10 +163,10 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 
 	}
 
-	function validar(idpublicidad,imagen,titulo){
+	function validar(idpublicidad,imagen,titulo,aplicacion){
 
 		var respuesta = 1;
-		console.log(idpublicidad,imagen,titulo);
+		console.log(idpublicidad,imagen,titulo,aplicacion);
 		if (imagen == ""){
 			if (idpublicidad == ""){
 				notification('Debe seleccionar una imagen','Advertencia!','warning');
@@ -166,6 +175,10 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 		}
 		if(titulo == ""){
 			notification('Debe introducir el campo Título','Advertencia!','warning');
+			respuesta = 0;
+		}
+		if(aplicacion == ""){
+			notification('Debe seleccionar el campo Aplicación','Advertencia!','warning');
 			respuesta = 0;
 		}
 		return respuesta;
@@ -230,3 +243,16 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 			
 		
 	}
+
+	$("#aplicacion").on('select2:select', function(e) {
+		aplicacion = $(this).val();
+		
+	});
+	$("#estatus").on('select2:select', function(e) {
+		estatus = $(this).val();
+		
+	});
+
+	$("select").select2();
+
+		

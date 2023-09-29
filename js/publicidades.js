@@ -40,6 +40,8 @@ $("#nuevapublicidad").click(function(){
 					$(this).html('<input type="text" placeholder="' + title + '" id="f' + id + '" style="width: 200px" /> ');
 				}else if(title == 'Estatus'){
 					$(this).html('<input type="text" placeholder="' + title + '" id="f' + id + '" style="width: 350px" /> ');
+				}else if(title == 'Aplicación'){
+					$(this).html('<input type="text" placeholder="' + title + '" id="f' + id + '" style="width: 350px" /> ');
 				}else {
 					$(this).html('<input type="text" placeholder="' + title + '" id="' + id + '" style="width: 100px" /> ');
 				}
@@ -73,7 +75,8 @@ $("#nuevapublicidad").click(function(){
         //serverMethod: 'post',
         stateLoadParams: function (settings, data) {
             const{columns}=data
-			$('th#ctitulo input').val(columns[2]['search']['search']); 
+			$('th#ctitulo input').val(columns[1]['search']['search']); 
+			$('th#caplicacion input').val(columns[2]['search']['search']);
             $('th#cestatus input').val(columns[3]['search']['search']);
         },
 	    ajax: {
@@ -83,6 +86,7 @@ $("#nuevapublicidad").click(function(){
 			{ 	"data": "id" },
 			{ 	"data": "acciones" },
 			{ 	"data": "titulo" },
+			{ 	"data": "aplicacion" },
             { 	"data": "estatus" }
 		],
 	    rowId: 'id', // CAMPO DE LA DATA QUE RETORNARÁ EL MÉTODO id()
@@ -98,16 +102,25 @@ $("#nuevapublicidad").click(function(){
 				
 			},
 			{
-	            targets: [2, 3],
+	            targets: [2],
+				visible: true,
+	            className: 'text-left'
+	        },
+			{
+	            targets: [3],
+				visible: true,
+	            className: 'text-left'
+	        },
+			{
+	            targets: [4],
+				visible: true,
 	            className: 'text-left'
 	        },
 			{ targets	: 0, width	: '0%' },
 			{ targets	: 1, width	: '100px' },
 			{ targets	: 2, width	: '200px' },
-			{ 
-				targets	: 3,
-				width 	: '200px',
-			},
+			{ targets	: 3, width 	: '200px' },
+			{ targets	: 4, width 	: '200px'},
 
 
 	    ],

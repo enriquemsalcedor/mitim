@@ -67,6 +67,8 @@
         <!-- Ajustes -->
         <link href="./css/style6.css" rel="stylesheet"> 
         <link rel="stylesheet" href="./css/ajustes1.css<?php autoVersiones(); ?>">
+		<link rel="stylesheet" href="./css/ajustes.css<?php autoVersiones(); ?>">
+
     </head>
 
 	<body>
@@ -199,10 +201,37 @@
 														></textarea>
 												</div>
 											</div>
+											<div class="col-xs-6 col-sm-6 col-md-6 box-aplicacion">
+												<div class="form-group label-floating selectsr selectcr2">
+													<label class="control-label">Aplicación <span class="text-red">*</span></label>
+													<select name="aplicacion" id="aplicacion" class="form-control inc-edit text">
+														<option value=""></option><option value="1">Clientes</option>
+														<option value="2">Proveedores</option>
+														<option value="3">Ambas Apps</option>
+													</select>
+												</div>
+											</div>
+
+									
+											<?php
+												if($tipo == "edit"){
+											?>
+													<div class="col-xs-6 col-sm-6 col-md-6">
+														<div class="form-group label-floating selectsr selectcr2">
+															<label class="control-label" for="estatus">Estatus <span class="text-red">*</span></label>										
+															<select name="estatus" id="estatus" class="form-control inc-edit text">
+																<option value="1">Publicada</option>
+																<option value="0">Inactiva</option>
+															</select>
+														</div>
+													</div>
+											<?php							
+												}
+											?>
 										</div><!--form-row-->
 									</div><!--pt-4-->
 
-
+									<br/><br/>
 									<?php if($tipo=="new" || $tipo=="edit"): ?>
 		                                    <button type="button" class="btn btn-primary btn-xs" id="guardar-publicidad" style="float:right;"><i class="fas fa-check-circle mr-2"></i>Guardar</button>
 									<?php endif; ?>
@@ -264,6 +293,7 @@
 	    <script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 	    <script src="./js/custom.min.js"></script>
 	    <script src="./js/deznav-init.js"></script>
+		
 	    <!-- Toastr -->
 	    <script src="./vendor/toastr/js/toastr.min.js"></script>
 	    <!-- Select - Font -->
@@ -277,6 +307,7 @@
 	    <script src="./js/funciones1.js?<?php autoVersiones(); ?>"></script>
 	    <script src="./js/publicidades-ne.js?<?php autoVersiones(); ?>"></script>
 	    <!--sweetalert2-->
+		
 
 	</body>
 </html>
