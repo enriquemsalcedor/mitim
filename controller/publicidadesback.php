@@ -28,6 +28,9 @@
 		case "getpublicidadapp":
 			  getpublicidadapp();
 			  break;
+		case "getpublicidadproveedores":
+			getpublicidadproveedores();
+			break;
 		default:
 			  echo "{failure:true}";
 			  break;
@@ -154,7 +157,6 @@
 		$result = $mysqli->query($query);
 		$id = $mysqli->insert_id;
 		
-		echo $aplicacion;
 		if($result == true){
 			$campos = array(
 				'Titulo' 		=> $titulo,
@@ -375,7 +377,7 @@
 		
 		$query  = " SELECT a.id, a.titulo, a.urlimagen, a.descripcion, a.estatus
 					FROM publicidad a  
-					WHERE 1=1 AND a.aplicacion in (1,2) AND a.estatus = 1
+					WHERE a.aplicacion IN (1, 3) AND a.estatus = 1
 					ORDER BY a.id ASC ";
 		 
 		$result = $mysqli->query($query);
@@ -407,7 +409,7 @@
 		
 		$query  = " SELECT a.id, a.titulo, a.urlimagen, a.descripcion, a.estatus
 					FROM publicidad a  
-					WHERE 1=1 AND a.aplicacion in (1,3) AND a.estatus = 1
+					WHERE a.aplicacion IN (2, 3) AND a.estatus = 1
 					ORDER BY a.id ASC ";
 		 
 		$result = $mysqli->query($query);
