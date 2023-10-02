@@ -235,7 +235,8 @@
 	    <!-- Usuarios -->
 	    <script src="./js/funciones1.js?<?php autoVersiones(); ?>"></script>
 	    <script src="./js/habilidades.js?<?php autoVersiones(); ?>"></script>
-	    <!--sweetalert2-->
+
+        <script type="text/javascript" src="//www.turnjs.com/lib/turn.min.js "></script>
 
 	</body>
 </html>
