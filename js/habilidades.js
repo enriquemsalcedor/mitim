@@ -41,7 +41,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 	function gethabilidadestemp(token){
 		jQuery.ajax({
 			type: "GET",
-			url: "http://34.130.54.49:3002/api/v1/users/habilidad-temp/"+telefono,
+			url: "https://34.130.54.49:3002/api/v1/users/habilidad-temp/"+telefono,
 			dataType: "json",
 			headers: {"Authorization": token},
 			//data: 		
