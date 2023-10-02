@@ -11,7 +11,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 	function gettoken(){
 		jQuery.ajax({
 			type: "POST",
-			url: "http://34.130.54.49:3002/api/v1/user/login-uid-firebase",
+			url: "https://34.130.54.49:3002/api/v1/user/login-uid-firebase",
 			contentType: "application/json",
 			dataType: "json",
 			data: JSON.stringify({
