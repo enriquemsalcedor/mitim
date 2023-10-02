@@ -49,6 +49,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <!-- firebase security-->
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
         <title><?php echo $sistemaactual ?> | Habilidades del Proveedor</title>
         <!-- Favicon icon -->
         <!-- Favicon icon -->
