@@ -3,31 +3,10 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 	var telefono = getQueryVariable('value');
 	//var telefono = '+5079179155';
 	var token = "";
-	if(id != "" && id != undefined && id != null){
-		gettoken();
-		$('.tipo').html('Editar publicidad');
-	}else{
-	    $('.tipo').html('Nueva publicidad');
-	}
 	
 	//gettoken();
 	token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkX3VzdWFyaW8iOjE3NDIsInJvbCI6MSwiaWRfbmVnb2NpbyI6bnVsbH0sImlhdCI6MTY5NjI2NTI2MH0.bl8h4kv1kyjfNW8AMxsDt6HoUoXD4A2-1YCrElxAHZU";
 	gethabilidadestemp(token);
-	
-
-	$("#listadopublicidad").on("click",function(){
-		location.href = 'publicidades.php';
-	});
-	$("#salir-publicidad").on("click",function(){
-		location.href = 'publicidades.php';
-	});
-
-    //Botones de Modales
-    $("#guardar-publicidad").on("click",function(){
-		console.log('*****');
-		guardar();
-	});
-
 
 	function gettoken(){
 		jQuery.ajax({
