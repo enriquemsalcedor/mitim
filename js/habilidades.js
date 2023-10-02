@@ -41,7 +41,6 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 			type: "POST",
 			url: "http://34.130.54.49:3002/api/v1/user/login-uid-firebase",
 			dataType: "json",
-			headers: "",
 			data: {"uid_firebase" : "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"},		
 			beforeSend: function(){
 
@@ -52,8 +51,6 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 
 					}else{
 						notification('Ha ocurrido un error, intente más tarde','ERROR',"error");
-						//location.href = '/';
-
 					}
 
 			},error:function(err) {
