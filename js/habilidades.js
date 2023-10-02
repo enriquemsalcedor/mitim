@@ -12,8 +12,11 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 		jQuery.ajax({
 			type: "POST",
 			url: "http://34.130.54.49:3002/api/v1/user/login-uid-firebase",
+			contentType: "application/json",
 			dataType: "json",
-			data: {"uid_firebase" : "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"},		
+			data: JSON.stringify({
+				uid_firebase: "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+			}),
 			beforeSend: function(){
 
 			},success: function(respuesta) {
