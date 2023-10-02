@@ -10,7 +10,10 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 	    $('.tipo').html('Nueva publicidad');
 	}
 	
-	gettoken();
+	//gettoken();
+	token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkX3VzdWFyaW8iOjE3NDIsInJvbCI6MSwiaWRfbmVnb2NpbyI6bnVsbH0sImlhdCI6MTY5NjI2NTI2MH0.bl8h4kv1kyjfNW8AMxsDt6HoUoXD4A2-1YCrElxAHZU";
+	gethabilidadestemp(token);
+	
 
 	$("#listadopublicidad").on("click",function(){
 		location.href = 'publicidades.php';
@@ -25,16 +28,6 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 		guardar();
 	});
 
-	//VACIAR
-	function vaciarGuardar(){
-		$("#idpublicidad").val("");
-		$("#titulo").val("");
-		$("#descripcion").text("");
-		$("#imagen").val("");
-		$('#imagenpreview').attr('src', '');
-		$('#imagenaux').val('');
-		
-	}	
 
 	function gettoken(){
 		jQuery.ajax({
