@@ -2,10 +2,10 @@
     
     //CROSS-REEFRENCE PERMITIDOS
     header("Access-Control-Allow-Origin: https://toolkit.maxialatam.com");
-    header('Access-Control-Allow-Credentials: false');
+    /*header('Access-Control-Allow-Credentials: false');
     header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE");
     header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method, Authorization");
-	
+	*/
     include_once("conexion.php");
 	include_once("funciones.php");
     
