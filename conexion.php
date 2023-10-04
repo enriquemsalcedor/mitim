@@ -1,10 +1,17 @@
 <?php
 //$mysqli = new mysqli("127.0.0.1", "root", "M4X14W3B", "mitim");
 $mysqli = new mysqli("127.0.0.1", "root", "", "mitimdes");
+$mysqliAtik = new mysqli("34.130.54.49", "admin", "Atik@2022", "db_mitim_v1_test");
+
 
 if ($mysqli->connect_error) {
     echo "Fallo al conectar a MySQL: (" . $mysqli->connect_error . ") " . $mysqli->connect_error;
 }
+
+if ($mysqliAtik->connect_error) {
+    echo "Fallo al conectar con Atik: (" . $mysqliAtik->connect_error . ") " . $mysqliAtik->connect_error;
+}
+
 $sistemaactual = 'MITIM';
 $mysqli->query("SET NAMES utf8"); 
 $mysqli->query("SET CHARACTER SET utf8");

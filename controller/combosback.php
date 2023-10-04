@@ -761,7 +761,7 @@
 		if(isset($_REQUEST['tipo'])){ $tipo = $_REQUEST['tipo']; }else{ $tipo = ''; }																	   
 		//if(isset($_REQUEST['idempresas'])){ $idempresas = $_REQUEST['idempresas']; }else{ $idempresas = '1'; }
 		
-		$query  = " SELECT a.id, a.nombre, a.apellidos FROM clientes a ";
+		$query  = " SELECT a.id, a.nombre, a.apellidos, a.telefono FROM clientes a ";
 		if($nivel != 1 && $nivel != 2){
 			$query .= " LEFT JOIN usuarios b ON find_in_set(a.id, b.idclientes)
 						WHERE b.usuario = '".$usuario."' ";
@@ -784,9 +784,9 @@
 		$query  .= " ORDER BY a.nombre ASC ";
 		//debugL('query:'.$query);
 		$result = $mysqli->query($query);
-		$combo .= "<option value='0'> Sin Asignar </option>";
+		$combo .= "<option value='0' data-telf='0'> Sin Asignar </option>";
 		while($row = $result->fetch_assoc()){ 
-			$combo .= "<option value='".$row['id']."'>".$row['nombre']." ".$row['apellidos']."</option>";
+			$combo .= "<option value='".$row['id']."' data-telf='".$row['telefono']."'>".$row['nombre']." ".$row['apellidos']."</option>";
 		}
 		echo $combo;  
 	}

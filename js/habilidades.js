@@ -11,7 +11,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 	function gettoken(){
 		jQuery.ajax({
 			type: "POST",
-			url: "https://34.130.54.49:3002/api/v1/user/login-uid-firebase",
+			url: "http://34.130.54.49:3002/api/v1/user/login-uid-firebase",
 			contentType: "application/json",
 			dataType: "json",
 			data: JSON.stringify({
@@ -41,7 +41,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 	function gethabilidadestemp(token){
 		jQuery.ajax({
 			type: "GET",
-			url: "https://34.130.54.49:3002/api/v1/users/habilidad-temp/"+telefono,
+			url: "http://34.130.54.49:3002/api/v1/users/habilidad-temp/"+telefono,
 			dataType: "json",
 			headers: {"Authorization": token},
 			//data: 		
@@ -58,10 +58,12 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 							}else{
 								icon = 'fas fa-check';
 							}
+							console.log(value);
+							id_temp = "boton"+value.id_habilidad_temp;
 							contenido += '<div class="col-xl-6" >' +
 											'<div class="mb-2">' +
-											'<button type="button" class="btn btn-primary btn-xs mr-2" style="width: 50px;" data-id="'+value.id_habilidad_temp+'"' +
-											'id="accion-habilidad" data-accion="'+value.accion+'">'+
+											'<button type="button" class="accion-habilidad btn btn-primary btn-xs mr-2" style="width: 50px;" data-id="'+value.id_habilidad_temp+'"' +
+											'id="'+id_temp+'" data-accion="'+value.accion+'">'+
 											'<i class="'+icon+' mr-2" title="'+value.accion+'"></i>'+ 
 												
 											'</button>'+
@@ -73,6 +75,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 						  });
 
 						$('#habilidades').html(contenido);
+						$("input").prop('disabled', false);
 
 					}else{
 						notification('Ha ocurrido un error, intente más tarde','ERROR',"error");
@@ -106,7 +109,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 			},success: function(respuesta) {
 					if(respuesta.data!=null){
 						notification('Habilidad ' + accionStg +' satisfactoriamente','Buen trabajo','success');	
-						$('#accion-habilidad').attr("data-id").hide();
+						$("#boton"+id).attr('disabled','disabled');
 
 					}else{
 						notification('Ha ocurrido un error, intente más tarde','ERROR',"error");
@@ -121,7 +124,7 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 
 	}
 
-	$(document).on('click','#accion-habilidad', function(e){
+	$(document).on('click','.accion-habilidad', function(e){
 
 		var id = $(this).attr("data-id");
 		var accion = $(this).attr("data-accion");
