@@ -238,12 +238,26 @@
                                                                 </div>
                                                             </div>
 														</div>
+														<div class="col-xs-12 col-sm-4 col-md-4 box-propiedad nonivelpropiedad"> 
+															<div class="input-group align-items-center w-100">
+                                                                <div class="form-group label-floating is-empty div_propiedad">
+                                                                    <label class="control-label">Propiedades <span class="text-red">*</span></label>
+                                                                    <select name="idpropiedad" id="idpropiedad" class="form-control inc-edit text"></select>
+                                                                </div>
+                                                                <div class="input-group-append ml-2 pt-2" id="agregar_nueva_prioridad" data-toggle="tooltip" title="Creación de nueva propiedad" >
+                                                                    <button class="btn btn-primary rounded-circle" type="button" style="zoom:60%">
+                                                                        <i class="fa fa-plus"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+														</div>
+														<!--
 														<div class="col-xs-12 col-sm-4 col-md-4 box-proyectos nonivelcliente">
 															<div class="form-group label-floating">
 																<label class="control-label">Proyectos </label>
 																<select name="idproyectos" id="idproyectos" class="form-control inc-edit text"></select>
 															</div>
-														</div>
+														</div>-->
 														<div class="col-xs-12 col-sm-4 col-md-4 box-categorias nonivelcliente">
 															<div class="form-group label-floating">
 																<label class="control-label">Categoría <span class="text-red">*</span></label>
