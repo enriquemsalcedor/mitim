@@ -139,7 +139,8 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 		}
 		jQuery.ajax({
 			type: "PUT",
-			url: "http://34.130.54.49:3002/api/v1/users/habilidad-temp/"+id+"/change-status",
+			url: "https://api.test.mitim.app/api/v1/users/habilidad-temp/"+id+"/change-status",
+			//url: "http://34.130.54.49:3002/api/v1/users/habilidad-temp/"+id+"/change-status",
 			dataType: "json",
 			headers: {"Authorization": token},
 			beforeSend: function(){
