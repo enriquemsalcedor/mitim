@@ -43,7 +43,9 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 	function gethabilidadestemp(token){
 		jQuery.ajax({
 			type: "GET",
-			url: "http://34.130.54.49:3002/api/v1/users/habilidad-temp/"+telefono,
+			url: "https://api.test.mitim.app/api/v1/users/habilidad-temp/"+telefono,
+			//url: "https://api.test.mitim.app/api/v1/user/login-uid-firebase",
+
 			dataType: "json",
 			headers: {"Authorization": token},
 			//data: 		
@@ -95,7 +97,9 @@ $("#icono-filtrosmasivos,#icono-limpiar,#icono-refrescar").css("display","none")
 		
 		jQuery.ajax({
 			type: "POST",
-			url: "http://34.130.54.49:3002/api/v1/users/create-user-client",
+			//url: "http://34.130.54.49:3002/api/v1/users/create-user-client",
+			url: "https://api.test.mitim.app/api/v1/users/create-user-client",
+			
 			dataType: "json",
 			//headers: {"Authorization": token},
 			data:{
